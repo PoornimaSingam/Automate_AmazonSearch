@@ -1,0 +1,13 @@
+Feature: Amazon Search Feature
+
+ 
+
+  Scenario: Searching a product in Amazon
+    Given open amazon site "http://www.amazon.com"
+    When user searches for product "<Product_to_search>"
+    And user enters username and Password
+    Then success message is displayed
+
+    Examples:
+    |Product_to_search|
+    |Nikon  |

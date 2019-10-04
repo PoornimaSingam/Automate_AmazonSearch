@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Searching a product in Amazon site",
+        "description": "",
+        "id": "amazon-search-feature;searching-a-product-in-amazon-site;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7479001255,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open amazon site \"http://www.amazon.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.amazon.com",
+                  "offset": 18
+                }
+              ],
+              "location": "Amazon_Search_Test.open_amazon_site(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5055825268,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user searches for product \"Nikon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nikon",
+                  "offset": 27
+                }
+              ],
+              "location": "Amazon_Search_Test.user_searches_for_product(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2420413996,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on sorts functionality to sort the results from High to low price",
+            "match": {
+              "location": "Amazon_Search_Test.user_clicks_on_sorts_functionality_to_sort_the_results_from_High_to_low_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3403692988,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on the second product from sorted result page",
+            "match": {
+              "location": "Amazon_Search_Test.user_clicks_on_the_second_product_from_sorted_result_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34566471,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat StepDefinition.Amazon_Search_Test.verify_in_details_page_whether_product_topic_contains_text(Amazon_Search_Test.java:83)\r\n\tat ✽.Then verify in details page whether product topic contains text \"Nikon D3X\"(Amazon_search.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "verify in details page whether product topic contains text \"Nikon D3X\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nikon D3X",
+                  "offset": 60
+                }
+              ],
+              "location": "Amazon_Search_Test.verify_in_details_page_whether_product_topic_contains_text(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Search"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Search Feature",
+    "description": "",
+    "id": "amazon-search-feature",
+    "keyword": "Feature",
+    "uri": "Amazon_search.feature"
+  }
+]

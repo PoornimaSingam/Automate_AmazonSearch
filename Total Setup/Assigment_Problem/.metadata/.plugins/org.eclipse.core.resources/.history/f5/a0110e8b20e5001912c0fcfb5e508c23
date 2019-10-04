@@ -1,0 +1,18 @@
+package runner;
+
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+//@RunWith(Cucumber.class)				
+//@CucumberOptions(features="Features",glue={"StepDefinition"})	
+ 
+@CucumberOptions(features = { "classpath:featurefile/Amazon_search.feature" }, glue = {
+		
+		"classpath:com.project1.src.test.java.stepDefinition",
+		"classpath:com.cucumber.appium.ryder.helper" }, plugin = { "pretty", "json:target/login.json",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true, tags = "@Test")
+
+public class TestRunner {
+
+}

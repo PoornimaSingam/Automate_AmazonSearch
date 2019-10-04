@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 18.693 sec <<< FAILURE!
+Then verify in details page whether product topic contains text "Nikon D3X"(| Nikon |)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinition.Amazon_Search_Test.verify_in_details_page_whether_product_topic_contains_text(Amazon_Search_Test.java:83)
+	at ?.Then verify in details page whether product topic contains text "Nikon D3X"(Amazon_search.feature:8)
+
+| Nikon |  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinition.Amazon_Search_Test.verify_in_details_page_whether_product_topic_contains_text(Amazon_Search_Test.java:83)
+	at ?.Then verify in details page whether product topic contains text "Nikon D3X"(Amazon_search.feature:8)
+

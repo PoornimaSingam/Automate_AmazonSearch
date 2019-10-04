@@ -1,0 +1,13 @@
+Feature: Amazon Search Feature 
+ @Search
+  Scenario Outline: Searching a product in Amazon site
+    Given open amazon site "http://www.amazon.com"
+    When user searches for product "<Product_to_search>"
+    And user clicks on sorts functionality to sort the results from High to low price
+    And user clicks on the second product from sorted result page
+    Then verify in details page whether product topic contains text "Nikon D3X"
+    
+
+    Examples:
+    |Product_to_search|
+    |Nikon            |
